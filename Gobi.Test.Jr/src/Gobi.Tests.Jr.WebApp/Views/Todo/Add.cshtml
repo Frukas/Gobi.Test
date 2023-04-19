@@ -1,0 +1,22 @@
+﻿@model Gobi.Test.Jr.Domain.TodoItem
+@{
+    ViewData["Title"] = "Add item";
+}
+
+<div class=" justify-content-md-center">
+
+    <h3 class="mt-5 mb-5 d-flex justify-content-between">
+        @ViewData["Title"]
+    
+            <a asp-action="Index" class="btn btn-secondary">
+                Voltar
+            </a>
+    
+    </h3>
+
+    <form asp-action="Add">
+
+        <partial name="Partials/_Form" model="Model" />
+
+    </form>
+</div>
